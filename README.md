@@ -1,7 +1,7 @@
 # How it works ?
 
 ``` 
-var $nanoapi = require('nanoapi');
+var $nanoapi = require('nanopool_api');
 $nanoapi.balance('YOUR_WALLET_ADDRESS', function(p_ReqResponse, p_JsonBody)
 {
     console.log(p_ReqResponse); ///< Contain request response as statusCode, etc...
