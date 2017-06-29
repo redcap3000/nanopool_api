@@ -1,6 +1,6 @@
 {
   "name": "nanopool_api",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Nanopool.org api helper",
   "main": "nanoapi.js",
   "scripts": {
