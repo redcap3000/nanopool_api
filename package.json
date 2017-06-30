@@ -18,5 +18,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/volokasse/nanopool_api.git"
+  },
+  "dependencies": {
+    "request": "^2.81.0"
   }
 }
