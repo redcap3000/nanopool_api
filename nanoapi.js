@@ -112,61 +112,61 @@ module.exports = (function()
         m_Private.launch(p_Callback,p_Currency);
     };
 
-    m_Public.network.lastblocknumber = function(p_Callback)
+    m_Public.network.lastblocknumber = function(p_Currency,p_Callback)
     {
         l_Path = 'network/lastblocknumber';
         m_Private.launch(p_Callback,p_Currency);
     };
 
-    m_Public.network.timetonextepoch = function(p_Callback)
+    m_Public.network.timetonextepoch = function(p_Currency,p_Callback)
     {
         l_Path = 'network/timetonextepoch';
         m_Private.launch(p_Callback,p_Currency);
     };
 
-    m_Public.block_stats = function(p_Offset, p_Count, p_Callback)
+    m_Public.block_stats = function(p_Currency,p_Offset, p_Count, p_Callback)
     {
         l_Path = 'block_stats/' + p_Offset + '/' + p_Count;
         m_Private.launch(p_Callback,p_Currency);
     };
 
-    m_Public.blocks = function(p_Offset, p_Count, p_Callback)
+    m_Public.blocks = function(p_Currency,p_Offset, p_Count, p_Callback)
     {
         l_Path = 'blocks/' + p_Offset + '/' + p_Count;
         m_Private.launch(p_Callback,p_Currency);
     };
 
-    m_Public.approximated_earnings = function(p_Hashrate, p_Callback)
+    m_Public.approximated_earnings = function(p_Currency,p_Hashrate, p_Callback)
     {
         l_Path = 'approximated_earnings/' + p_Offset;
         m_Private.launch(p_Callback,p_Currency);
     };
 
-    m_Public.prices = function(p_Callback)
+    m_Public.prices = function(p_Currency,p_Callback)
     {
         l_Path = 'prices';
         m_Private.launch(p_Callback,p_Currency);
     };
    
-    m_Public.pool.activeminers = function(p_Callback)
+    m_Public.pool.activeminers = function(p_Currency,p_Callback)
     {
         l_Path = 'pool/activeminers';
         m_Private.launch(p_Callback,p_Currency);
     };
 
-    m_Public.pool.activeworkers = function(p_Callback)
+    m_Public.pool.activeworkers = function(p_Currency,p_Callback)
     {
         l_Path = 'pool/activeworkers';
         m_Private.launch(p_Callback,p_Currency);
     };
 
-    m_Public.pool.hashrate = function(p_Callback)
+    m_Public.pool.hashrate = function(p_Currency,p_Callback)
     {
         l_Path = 'pool/hashrate';
         m_Private.launch(p_Callback,p_Currency);
     };
 
-    m_Public.pool.topminers = function(p_Callback)
+    m_Public.pool.topminers = function(p_Currency,p_Callback)
     {
         l_Path = 'pool/topminers';
         m_Private.launch(p_Callback,p_Currency);
