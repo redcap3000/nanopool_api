@@ -221,12 +221,12 @@ module.exports = (function()
           l_ApiUrl = 'https://api.nanopool.org/v1/'+currency+'/';
         }else{
             console.log("Internal function error, currency not provided")
-            throw false;
+            return false;
         }
         $request(l_ApiUrl + l_Path, function(p_Error, p_Response, p_Body)
         {
             if (p_Error) throw p_Error;
-            if (p_Response.statusCode !== 200) throw 'Status code is not 200, request failed';
+            if (p_Response.statusCode !== 200) return 'Status code is not 200, request failed';
 
             l_Path = '';
             p_Callback(p_Response, JSON.parse(p_Body));
